@@ -30,6 +30,12 @@ class Test_RCC(unittest.TestCase):
     def test_encrypt_(self):
         new_msg = self.test_rcc.RCC_encrypt("LO VE ani$mals!",3)
         self.assertEqual(new_msg, "OU EQ pfd$kbpz!")    
+
+    def test_decrypt(self):
+        org__msg = self.test_rcc.RCC_decrypt("Kkuxd Ojpmh!",3)
+        self.assertEqual(new_msg, "Hello World!")
+
+
 if __name__ == '__main__':
     unittest.main()
         
