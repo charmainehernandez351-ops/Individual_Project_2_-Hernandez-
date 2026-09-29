@@ -18,14 +18,14 @@ class Rotating_CC:
             if ch.isupper():
                 i = self.ALPHA.index(ch)
                 ch = self.ALPHA[(i + new_shift) % len(self.ALPHA)]
+                new_shift+=shift
             elif ch.islower():
                 uppercase_ch = ch.upper()
                 i = self.ALPHA.index(uppercase_ch)
                 ch = self.ALPHA[(i + new_shift) % len(self.ALPHA)].lower()
-
+                new_shift+=shift
 	
 				                
-            new_shift+=shift
             new_msg += ch
                 
         return new_msg
