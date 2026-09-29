@@ -15,7 +15,6 @@ class Test_RCC(unittest.TestCase):
         self.assertEqual(new_msg, "JIRTY")
     
     # move the triple quotes to reveal more tests
-    """
     def test_encrypt_3(self):
         new_msg = self.test_rcc.RCC_encrypt("Hello",2)
         self.assertEqual(new_msg, "Jirty")
@@ -27,8 +26,10 @@ class Test_RCC(unittest.TestCase):
     def test_encrypt_5(self):
         new_msg = self.test_rcc.RCC_encrypt("Hello World!",3)
         self.assertEqual(new_msg, "Kkuxd Ojpmh!")
-    """
-        
+   
+    def test_encrypt_(self):
+        new_msg = self.test_rcc.RCC_encrypt("LO VE ani$mals!",3)
+        self.assertEqual(new_msg, "OU EQ pfd$kbpz!")    
 if __name__ == '__main__':
     unittest.main()
         
